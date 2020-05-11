@@ -1,0 +1,9 @@
+header {
+  text-align:center;
+  padding:2rem 0;
+}
+form{
+  border:1px solid  #c0c0c0;
+  padding:2rem;
+  margin-bottom:2rem;
+}
