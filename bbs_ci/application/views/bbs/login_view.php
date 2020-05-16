@@ -389,15 +389,14 @@
                 data: {
                     'admin_password': $('#admin_password').val()
                 },
-                datatype: 'json'
-            }).then(
-                function(data) {
-                    window.location.href = "/bbs/admin";
-                },
-                function(error) {
+                datatype: 'json',
+            }).done(function(data){
+                    alert("認証OK!");
+                    window.location.href = "/bbs/admin";               
+            }).fail(function(error){
                     let err_msg = JSON.parse(error.responseText);
-                    alert(err_msg.message);
-                })
+                    alert(err_msg.message);              
+            });
         });
     </script>
 </body>

@@ -380,7 +380,6 @@
         <input type="submit" name="btn_submit" value="書き込む">
     </form>
     <hr>
-    
     <section>
         <?php if (!empty($message_array)) : ?>
             <?php foreach ($message_array as $value) : ?>
