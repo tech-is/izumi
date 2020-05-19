@@ -33,13 +33,13 @@
   <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
   <script>
     $(function() {
-      $(".btn-danger").on('click', function(event) {
+      $('.btn-danger').on('click', function(event) {
         event.preventDefault();
         $.ajax({
           type: "POST",
           url: "/crm/delete_crm",
           data: {
-            'delete_id': $('[name="delete_id"]').val()
+            'delete_id': $(this).data('id')
           },
           crossDomain: false,
           dataType: "json",
@@ -228,11 +228,8 @@
                           <button id="button1" type="submit" class="btn-success">編集</button>
                           <?= form_close(); ?>
                         </td>
-                        <td>
-                          
-                          <input type="hidden" name="delete_id" value="<?= $values['guest_id'] ?>">
-                          <button id="button2" type="submit" class="btn-danger">削除</button>
-                          
+                        <td>      
+                          <button data-id="<?= $values['guest_id'] ?>" type="submit" class="btn-danger">削除</button>
                         </td>
                       </tr>
                     <?php  } ?>

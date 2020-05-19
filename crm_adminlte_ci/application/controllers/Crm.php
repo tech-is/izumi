@@ -167,7 +167,7 @@ class Crm extends CI_Controller
         $this->load->model("model_guests");
         $this->model_guests->update_guest($day);
         //redirect("main/guests");
-        exit(json_encode(['update_id' =>'更新完了']));
+        exit(json_encode(['guest' =>'更新完了']));
     }
     public function delete_crm()
     {
@@ -175,6 +175,7 @@ class Crm extends CI_Controller
         $day = date("Y-m-d");
         $this->load->model("model_guests");
         $this->model_guests->delete_guest($day);
-        exit(json_encode(['delete_id' =>'削除完了']));
+        //redirect("main/guests");
+        exit(json_encode(['guest' =>'削除完了']));
     }
 }
