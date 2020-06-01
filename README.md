@@ -6,7 +6,7 @@
 
 ## フォルダ構成
 
-│
+│  
 ┌─ `bbs_ci`  
 │   // codeigniterを使ったひことこ掲示板 - html5,css3,php,sql  
 ├─ `calender_year`  
