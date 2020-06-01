@@ -7,7 +7,7 @@
 ## フォルダ構成
 
 │  
-┌─ `bbs_ci`  
+├─ `bbs_ci`  
 │   // codeigniterを使ったひことこ掲示板 - html5,css3,php,sql  
 ├─ `calender_year`  
 │   // 内閣府が定める祝日入りの年間カレンダー - html5,css3,php,sql  
